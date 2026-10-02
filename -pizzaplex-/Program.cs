@@ -1,12 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using _pizzaplex_;
 
-
-Console.WriteLine("Evelyn alterou");
-
-Console.WriteLine("Gabriel alterou");
-
-Console.WriteLine("Maria  alterou");
-
-Console.WriteLine("Yago alterou");
-
-Console.WriteLine("Cassiana alterou");
+CadastroCliente cliente = new CadastroCliente();
+cliente.Cadastrar();
