@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _pizzaplex_.dominio
 {
-    class pessoa
+    public static class pessoaService
     {
     }
 }

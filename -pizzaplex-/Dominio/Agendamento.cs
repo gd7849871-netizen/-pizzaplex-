@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace _pizzaplex_.Dominio
+namespace _pizzaplex_.Serviços
 {
-    public class Agendamento
+    internal class Agendamento
     {
+        public string mesa { get; set; }
         public int Horario { get; set; }
-        public string Mesa { get; set; }
-        }
+    }
 }
