@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _pizzaplex_
+namespace _pizzaplex_.Dominio
 {
     public class CadastroCliente
     {
