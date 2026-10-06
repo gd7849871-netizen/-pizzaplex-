@@ -6,33 +6,30 @@ using System.Threading.Tasks;
 
 namespace _pizzaplex_
 {
-   public class cardapio
-       
+    public class Cardapio
     {
-        public string calabresa { get; set}
-        public string  frango{ get; set }
-        public string portuguesa { get; set}
-        public string  palmito{ get; set}
-    }
-    public void Cadastrar()
+        public string Calabresa { get; set; }
+        public string Frango { get; set; }
+        public string Portuguesa { get; set; }
+        public string Palmito { get; set; }
+
+        public void Cadastrar()
         {
             Console.WriteLine("================================");
             Console.WriteLine("            CARDAPIO            ");
             Console.WriteLine("================================");
 
-            Console.Write("calabresa: ");
-            calabresa = Console.ReadLine();
+            Console.Write("Calabresa: ");
+            Calabresa = Console.ReadLine();
 
-            Console.Write("frango: ");
-            frango = Console.ReadLine();
+            Console.Write("Frango: ");
+            Frango = Console.ReadLine();
 
-            Console.Write("portuguesa: ");
-            portuguesa = Console.ReadLine();
+            Console.Write("Portuguesa: ");
+            Portuguesa = Console.ReadLine();
 
-            Console.Write("palmito: ");
-           palmito = Console.ReadLine();
-
-    
+            Console.Write("Palmito: ");
+            Palmito = Console.ReadLine();
         }
     }
-
+}
