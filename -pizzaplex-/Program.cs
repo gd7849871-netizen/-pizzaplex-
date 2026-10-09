@@ -2,6 +2,7 @@
 using _pizzaplex_.Dominio;
 using System;
 using _pizzaplex_.Dominio;
+using _pizzaplex.Dominio;
 
 
-TabelaClientes.ListarClientes();
+ClienteService.Cadastrar();

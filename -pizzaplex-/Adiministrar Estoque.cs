@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _pizzaplex_.dominio
+namespace _pizzaplex_
 {
-    public static class pessoaService
+    internal class Adiministrar_Estoque
     {
     }
 }
