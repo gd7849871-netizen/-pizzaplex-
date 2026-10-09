@@ -1,12 +1,13 @@
-﻿using _pizzaplex_.dominio;
+﻿using _pizzaplex.Dominio;
+using _pizzaplex_.Dominio;
 using System;
 using System.Collections.Generic;
 
-namespace _pizzaplex_.Dominio
+namespace _pizzaplex.Dominio
 {
-    public static class TabelaClientes
+    public static class ClienteService
     {
-        public static List<Cliente> clientes { get; set; } =  new List<Cliente>();
+        public static List<Cliente> clientes { get; set; } = new List<Cliente>();
         public static void AdicionarCliente(Cliente cliente)
         {
             Cliente clientess = Cadastrar();
@@ -15,7 +16,7 @@ namespace _pizzaplex_.Dominio
 
         public static void ListarClientes()
         {
-            Console.WriteLine();
+           
         }
         public static Cliente Cadastrar()
         {
@@ -34,13 +35,13 @@ namespace _pizzaplex_.Dominio
             Console.Write("Endereço: ");
             string endereco = Console.ReadLine();
 
-           return new Cliente()
-           {
-               nome = nome,
-               email = email,
-               whatsapp = whatsapp,
-               endereco = endereco
-           };
+            return new Cliente()
+            {
+                nome = nome,
+                email = email,
+                whatsapp = whatsapp,
+                endereco = endereco
+            };
         }
 
     }
