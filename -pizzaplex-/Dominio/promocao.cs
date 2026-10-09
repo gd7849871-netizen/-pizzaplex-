@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace _pizzaplex_.Dominio
 {
-    internal class promocoes
+    internal class Promocao
     {
-        public int Numero { get; set; }
+        public int Id { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
-        public double ValorDesconto { get; set; }
+        public double Desconto { get; set; }
         public DateTime DataInicio { get; set; }
         public DateTime DataFim { get; set; }
         public string Status { get; set; }
