@@ -12,7 +12,6 @@ namespace _pizzaplex_.Dominio
         public string Whatsapp { get; set; }
         public string Endereco { get; set; }
 
-
     }
 
 

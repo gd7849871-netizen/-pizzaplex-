@@ -19,14 +19,10 @@ namespace _pizzaplex.Dominio
         {
             Cliente clientess = Cadastrar();
             clientes.Add(clientess);
+
         }
 
         public static void ListarClientes()
-        {
-           
-           
-        }
-        public static Cliente Cadastrar()
         {
 
             foreach (Cliente item in clientes)
@@ -37,6 +33,45 @@ namespace _pizzaplex.Dominio
                 Console.WriteLine($"WhatsApp: {item.Whatsapp}");
                 Console.WriteLine($"Endereço: {item.Endereco}");
             }
+
+
+        }
+
+        public static void Remover(int id)
+        {
+            Cliente item = clientes.Find(Cliente => Cliente.Id == id);
+            if (item != null)
+            {
+                clientes.Remove(item);
+                ListarClientes();
+            }
+            else
+            {
+                Console.WriteLine("Sistema não conseguiu encontrar o usuario");
+            };
+        }
+
+        public static void Editar(int id, string novoNome, string novoEmail, string novoEndereco,string novoWhatsaap)      
+        {
+            Cliente item = clientes.Find(Cliente => Cliente.Id == id);
+            if (item != null)
+            {
+                item.Nome = novoNome;
+                item.Email = novoEmail;
+                item.Endereco = novoEndereco;
+                item.Whatsapp = novoWhatsaap;
+
+                ListarClientes();
+            }
+            else
+            {
+                Console.WriteLine("Sistema não conseguiu encontrar o usuario");
+            }
+        }
+        
+
+        public static Cliente Cadastrar()
+        {
 
             Console.WriteLine("cadastro cliente");
 
