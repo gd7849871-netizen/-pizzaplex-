@@ -4,5 +4,4 @@ using System;
 using _pizzaplex_.Dominio;
 using _pizzaplex.Dominio;
 
-
-ClienteService.Cadastrar();
+CardapioService.ExibirCardapio();
